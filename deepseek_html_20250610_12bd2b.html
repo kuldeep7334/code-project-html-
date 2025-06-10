@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marwadi University Time-Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #0066cc;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #0066cc;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .break {
+            background-color: #ffcccb;
+            font-weight: bold;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .footer {
+            margin-top: 20px;
+            font-style: italic;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <h2>Marwadi University</h2>
+            <p>Rajkot - 360003, Gujarat, India</p>
+        </div>
+        <div>
+            <p><strong>Academic Year:</strong> 2023-24</p>
+            <p><strong>Semester:</strong> 3</p>
+        </div>
+    </div>
+    
+    <h1>Time-Table</h1>
+    
+    <table>
+        <tr>
+            <th>Time/Day</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+        </tr>
+        <tr>
+            <td>9:00 - 10:00</td>
+            <td>Mathematics (Prof. Sharma)</td>
+            <td>Physics (Dr. Patel)</td>
+            <td>Mathematics (Prof. Sharma)</td>
+            <td>Chemistry (Dr. Mehta)</td>
+            <td>Programming (Prof. Joshi)</td>
+            <td>Lab Session</td>
+        </tr>
+        <tr>
+            <td>10:00 - 11:00</td>
+            <td>Physics (Dr. Patel)</td>
+            <td>Mathematics (Prof. Sharma)</td>
+            <td>Chemistry (Dr. Mehta)</td>
+            <td>Programming (Prof. Joshi)</td>
+            <td>Mathematics (Prof. Sharma)</td>
+            <td>Lab Session</td>
+        </tr>
+        <tr class="break">
+            <td>11:00 - 11:30</td>
+            <td colspan="6">Break</td>
+        </tr>
+        <tr>
+            <td>11:30 - 12:30</td>
+            <td>Programming (Prof. Joshi)</td>
+            <td>Chemistry (Dr. Mehta)</td>
+            <td>Physics (Dr. Patel)</td>
+            <td>Mathematics (Prof. Sharma)</td>
+            <td>Chemistry (Dr. Mehta)</td>
+            <td>Lab Session</td>
+        </tr>
+        <tr>
+            <td>12:30 - 1:30</td>
+            <td>Chemistry (Dr. Mehta)</td>
+            <td>Programming (Prof. Joshi)</td>
+            <td>Programming (Prof. Joshi)</td>
+            <td>Physics (Dr. Patel)</td>
+            <td>Physics (Dr. Patel)</td>
+            <td rowspan="2">Project Work</td>
+        </tr>
+        <tr class="break">
+            <td>1:30 - 2:30</td>
+            <td colspan="5">Lunch Break</td>
+        </tr>
+        <tr>
+            <td>2:30 - 4:00</td>
+            <td>Lab Session</td>
+            <td>Lab Session</td>
+            <td>Tutorial</td>
+            <td>Lab Session</td>
+            <td>Tutorial</td>
+            <td>-</td>
+        </tr>
+    </table>
+    
+    <div class="footer">
+        <p>Note: Time-table is subject to change. Please check notice board regularly for updates.</p>
+        <p>© 2023 Marwadi University. All Rights Reserved.</p>
+    </div>
+</body>
+</html>
